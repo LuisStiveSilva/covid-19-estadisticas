@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/styles.css">
+    <title>Covid-19 - Estadísticas globales</title>
+</head>
+<body>
+    <h1 class="titulo">Covid-19 Estadísticas globales</h1>
+    
+    <div class="input">
+        <select class="selector" id="paises">
+          <option>Selecciona un país/continente</option>
+        </select>
+    </div>
+
+    <div class="container">
+        <div class="container__resultados infectados">
+            <h2 class="subtitulo">Infectados:</h2>
+            <p id="output-infectados"></p>
+        </div>
+        <div class="container__resultados recuperados">
+            <h2 class="subtitulo">Recuperados:</h2>
+            <p id="output-recuperados"></p>
+        </div>
+        <div class="container__resultados muertos">
+            <h2 class="subtitulo">Muertos:</h2>
+            <p id="output-muertos"></p>
+        </div>
+    </div>
+
+    <script src="app/js/scripts.js"></script>
+</body>
+</html>

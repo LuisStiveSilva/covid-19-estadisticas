@@ -1,0 +1,55 @@
+.titulo {
+  padding: 30px;
+}
+
+.input {
+  margin: auto;
+  padding: 20px;
+}
+
+.selector {
+  padding: 15px;
+  font-family: "Open Sans", sans-serif;
+  width: 270px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include laptop {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 70px;
+  }
+  &__resultados {
+    width: 260px;
+    padding: 30px;
+    border: 1px solid $grey;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #fff;
+    @include laptop {
+      margin: 0;
+    }
+  }
+}
+
+.infectados {
+  border-bottom: 10px solid $blue;
+}
+
+.recuperados {
+  border-bottom: 10px solid $green;
+}
+
+.muertos {
+  border-bottom: 10px solid $red;
+  margin-bottom: 30px;
+  @include laptop {
+    margin-bottom: 0;
+  }
+}
