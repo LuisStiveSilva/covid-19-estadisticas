@@ -1,4 +1,4 @@
-import { MY_API_KEY } from 'config.js';
+let myApiKey = config.MY_API_KEY
 const select = document.getElementById('paises')
 
 let covidData;
@@ -26,7 +26,7 @@ async function getData() {
     await fetch("https://covid-193.p.rapidapi.com/statistics", {
         "method": "GET",
         "headers": {
-            "x-rapidapi-key": MY_API_KEY,
+            "x-rapidapi-key": myApiKey,
             "x-rapidapi-host": "covid-193.p.rapidapi.com"
         }
     })
